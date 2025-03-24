@@ -10,8 +10,6 @@ led = machine.Pin("LED", machine.Pin.OUT)
 led.toggle()
 speed=.05
  
-#ssid = 'myhomeSSID'
-#password = 'MyHomePassword'
  
 ssid="#######################"
 password="#####################"
