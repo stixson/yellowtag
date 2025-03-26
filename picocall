@@ -60,13 +60,13 @@ try:
     ip = connect()
     open_socket(ip)
     mac = ubinascii.hexlify(network.WLAN().config('mac'),':').decode()
-    r = urequests.get("https://saintronans.co.uk/staff/terry/picocall/index.php?mac="+mac)
+    r = urequests.get("webaddress1")
     print(r.content)
     if (r.text)=="Received:"+mac:
         print("Saint.co.uk received")
         speed=speed+.5
     r.close()
-    r = urequests.get("https://saintronans.com/staff/Terry/picocall/index.php?mac="+mac)
+    r = urequests.get("webaddress2")
     if (r.text)=="Received:"+mac:
         print("Saint.com received")
         speed=speed+.5
